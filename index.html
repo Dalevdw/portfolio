@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--My header sections, contains the logo and the navigation bar-->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home"  onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about"  onclick="toggleMenu();">About</a></li>
+            <li><a href="#work"  onclick="toggleMenu();">Work</a></li>
+            <li><a href="#testimonial"  onclick="toggleMenu();">Testimonial</a></li>
+            <li><a href="#contact"  onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <!--This is my home section-->
+    <section class="top" id="home">
+        <div class="text">
+            <h2>Hello, I'm<br><span>Dale Van Der Westhuizen.</span></h2>
+            <h3>I'm a Junior Software Developer.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+    <!--This is my about section-->
+    <section class="about" id="about">
+    <div class="heading">
+        <h2>About Me</h2>
+    </div>
+    <div class="content">
+        <div class="contentBx w50">
+            <h3>I'm a Junior Software Developer.</h3>
+            <p>I am a trustworthy and dedicated individual. I am always willing to learn and experience new thngs. I take pride in duties delegated to me
+               and perform tasks to the best of my ability. I accept responsibility for what is expected and required from me.
+               I deem myself as polite and professional in all that i do.<br><br>I am efficient in Python, html, css and javascript.</p> 
+               <br><br><br>
+               <!--My rating bar-->
+               <div id="bar">
+                <h1>My Skills:</h1>
+                <br><br>
+                <label for="file">HTML&CSS:</label>
+                <progress id="file" value="90" max="100"> 90% </progress>
+                <br><br>
+                <label for="file">Javascript:</label>
+                <progress id="file" value="80" max="100"> 80% </progress>
+                <br><br>
+                <label for="file">Python:</label>
+                <progress id="file" value="95" max="100"> 95% </progress>
+            </div>
+        </div>
+        
+        <div class="w50">
+            <img src="port_img.JPG" class="img">
+        </div>  
+    </div>
+    </section>
+    <!--This is my work section-->
+    <section class="work" id="work">
+        <div class="heading white">
+            <h2>My Work</h2>
+            <p>This is my work since the day I started coding.</p>
+        </div>
+        <div class="content">
+            <!--Both work boxes contains links where I have used the anchor tags, that takes you to both
+            my html and python work-->
+            <div class="workBx">
+               <img src="trio.png" >
+               <h2>HTML, CSS & Javascript</h2>
+               <p>Html,CSS and Javascript is one of the first languages I've learnt. Below is a link for you to check out some of my work: <a href="work.html">See more</a></p>
+            </div>
+            <div class="content">
+            <div class="workBx">
+               <img src="python.png" >
+               <h2>Pyhton</h2>
+               <p>Python is also included into the first few laguages I've learnt,
+                   personally one of my favourites.Here you can check on some of my Python code: <a href="https://repl.it/@Dalevdw/WeatherApp#WeatherAppTask.py">https://repl.it/@Dalevdw/WeatherApp#<br>WeatherAppTask.py,</a></p>
+                   <p><a href="https://repl.it/@Dalevdw/Error-Handling#main.py">https://repl.it/@Dalevdw/Error-Handling#main.py</a>
+               </p>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <!--This is my testimonial section-->
+    <section class="testimonial" id="testimonial">
+        <div class="heading">
+            <h2>Testimonials</h2>
+            <p>Here are some random testimonials.</p>
+        </div>
+        <!--I've used random testimonials-->
+        <div class="content">
+            <div class="testimonialBx">
+               <p>"I am confident that Dale can meet your expectations. I recommend him."
+                   </p> 
+                <h3>— Godwin <span> </span>("Head of Curriculum and Learning")</h3>
+            </div>
+            <div class="content">
+                <div class="testimonialBx">
+                   <p>Dale is a very professional individual, that is hardworking  and always on time. He is  great at helping others and always pushing himself to do better </p> 
+                    <h3>-Ziyaad Petersen<span> ("A fellow colleague and friend")</span></h3>
+                </div>
+            <div class="content">
+                <div class="testimonialBx">
+                    <p>Dale is an intelligent and hard working guy who always does his utmost best in any task given to him.
+                    He is determined and not easily distracted when it comes to work.
+                    I know that wherever he goes, he will be a huge asset in any company.</p> 
+                  <h3>-Nadine Jodie Fortuin<span>("A colleague and friend")</span></h3>
+                </div>
+            <div class="content">
+                <div class="testimonialBx">
+                    <p>Dale is one of the most creative people i know, he is outragious and always on time.
+                    The word "we" is always part he's vocabulary. My fellow classmate is a down to earth always willing to help where is needed.</p> 
+                   <h3>-Kyle Phillips<span>("A good friend of mine")</span></h3>
+                </div>
+                <div class="content">
+                    <div class="testimonialBx">
+                        <p>Dale is very committed to ensuring an excellent end result and does not compromise his accurate attention to detail.</p> 
+                       <h3>-Ayoob Pasqualli<span>("A good friend of mine")</span></h3>
+                    </div>
+        </div>
+    </section>
+    <!--This is my contact section-->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact Me</h2>
+            <p>If you're looking to get hold of my, my contact details are below.</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact info</h3>
+                <div class="contactBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address</h3>
+                            <p><a>dalevdw3011@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>065-819-8822</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Instagram</h3>
+                            <p>ion_dalevdw</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            *<h3>Facebook</h3>
+                            <p>Dale Van Der Westhuizen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Message:"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>&copy; Portfolio by Dale Van Der Westhuizen. All rights reserved.</p>
+    </div>
+    <!--My Javascript-->
+    <!--I used this script create the background changing logo and navigation bar-->
+    <script type="text/javascript">
+    window.addEventListener('scroll',function(){
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+    })
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var menuToggle = document.querySelector('.menu');
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+
+    </script>
+</body>
+</html>
